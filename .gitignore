@@ -1,6 +1,51 @@
-# Ignore credentials file
-creds.py
+﻿# Secrets and local env
+.env
+.env.*
+!.env.example
 
-# Ignore Python virtual environment directory
+# Python virtual environments
 venv/
+.venv/
+env/
+
+# Python cache and bytecode
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# IDE/editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime artifacts
+*.log
+*.tmp
+*.temp
+
+# Bot local artifacts (downloaded screenshots, if left behind)
+payments/
